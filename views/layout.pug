@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv:"X-UA-Compatible" content="IE-edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title Tony J. Bailey
+    link(rel="stylesheet" href="/css/app.css")
+  
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-main
+      a.navbar-brand(href="/") Tony J. Bailey
+      button.navbar-toggler(type="button" data-toggle-collapse data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      
+      .collapse.navbar-collapse(id="navbarsExampleDefault")
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href="/") Home
+              span.sr-only (current)
+          li.nav-item.active
+            a.nav-link(href="/views/about") About
+          li.nav-item.active
+            a.nav-link(href="/views/portfolio") Portfolio
+          li.nav-item.active
+            a.nav-link(href="/views/contact") Contact
+            
+    
+    block content
+        
+    .section-c
+      .container
+        .row
+          .col-md-2
+    
+          .col-md-8
+            h2 Subscribe to Our Kitty Filled Newsletter
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            hr
+            form
+              input.form-control.input-lg(type="email" placeholder="Enter Email")
+              br
+              button.btn.btn-primary.btn-lg.btn-block Submit
+
+    footer
+      .container
+        p Copyright &copy; 2017
+    script(src='/scripts/jquery/dist/jquery.min.js')
+    script(src='/scripts/js/bootstrap.min.js')
+    script(src='/js/main.js')

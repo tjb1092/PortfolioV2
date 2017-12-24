@@ -1,0 +1,20 @@
+extends sidebarLayout
+
+block title
+  h1 Contact
+  
+block info 
+  .card
+    .card-header Get In Touch
+    .card-body
+      form
+        .form-group
+          label Name 
+          input.form-control(type="text" placeholder="Enter Name")          
+        .form-group
+          label Email 
+          input.form-control(type="email" placeholder="Enter Email")
+        .form-group
+          label Message 
+          textarea.form-control(placeholder="Enter Message")
+        button.btn.btn-default(type="submit") Submit

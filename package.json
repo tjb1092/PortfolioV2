@@ -1,0 +1,28 @@
+{
+  "name": "portfoliov2",
+  "version": "1.0.0",
+  "description": "Making a portfolio w/ Bootstrap 4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjb1092/PortfolioV2.git"
+  },
+  "author": "Tony Bailey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjb1092/PortfolioV2/issues"
+  },
+  "homepage": "https://github.com/tjb1092/PortfolioV2#readme",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "live-server": "^1.2.0",
+    "popper.js": "^1.12.9",
+    "pug": "^2.0.0-rc.4"
+  }
+}
