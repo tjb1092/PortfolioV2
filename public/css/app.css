@@ -3321,7 +3321,7 @@ button.close {
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.show {
-    opacity: 0.5; }
+    opacity: 0.85; }
 
 .modal-header {
   display: flex;
@@ -8322,7 +8322,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 .showcase {
   color: white;
-  background: url(../img/cat.jpg) no-repeat;
+  background: url(../img/circuit.jpg) no-repeat;
   height: 600px;
   padding: 30px 0; }
   .showcase h1 {
@@ -8360,10 +8360,11 @@ a.text-dark:focus, a.text-dark:hover {
     border-color: #ffffff !important; }
 
 .card-header h5 a {
+  background-color: #43464B;
   color: #ffffff !important; }
 
 .card-header {
-  color: #ffffff !important;
+  color: black;
   font-size: 20px; }
 
 .main {
@@ -8378,12 +8379,21 @@ a.text-dark:focus, a.text-dark:hover {
 
 .title-bar {
   color: white !important;
-  background: url(../img/cat.jpg) no-repeat 0 -520px;
+  background: url(../img/circuit.jpg) no-repeat 0 -520px;
   padding-bottom: 10px;
   border-bottom: 4px solid #43464B; }
   .title-bar h1 {
     padding-top: 15px;
     padding-bottom: 0px; }
+
+.modal-header {
+  color: #ffffff !important; }
+  .modal-header span {
+    color: #ffffff !important; }
+
+.modal-body img {
+  width: 100%;
+  margin-bottom: 10px; }
 
 footer {
   padding: 30px;

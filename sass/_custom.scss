@@ -13,7 +13,7 @@
 
 .showcase{
   color: white;
-  background: url(../img/cat.jpg) no-repeat;
+  background: url(../img/circuit.jpg) no-repeat;
   height: 600px;
   padding: 30px 0;
 
@@ -68,10 +68,11 @@
 
 }
 .card-header h5 a{
+  background-color: $main-color;
   color: set-text-color($main-color) !important;
 }
 .card-header{
-  color: set-text-color($main-color) !important;
+  color: black;
   font-size: 20px;
 }
 
@@ -92,12 +93,25 @@
 
 .title-bar{
   color: white !important;
-  background: url(../img/cat.jpg) no-repeat 0 -520px;
+  background: url(../img/circuit.jpg) no-repeat 0 -520px;
   padding-bottom: 10px;
   border-bottom: 4px solid $main-color;
   h1{
     padding-top: 15px;
     padding-bottom: 0px;
+  }
+}
+
+.modal-header{
+  color: set-text-color($main-color) !important;
+  span{
+    color: set-text-color($main-color) !important;
+  }
+}
+.modal-body{
+  img{
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 

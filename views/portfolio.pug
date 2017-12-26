@@ -1,22 +1,96 @@
-extends sidebarLayout
+extends layout
+include project
 
-block title
-  h1 Portfolio
-  
-block info 
-  .card
-    .card-header What We Do
-    .card-body
-      .card.card-body.bg-faded
-        h4 Cat Design 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      .card.card-body.bg-faded
-        h4 Cat Developer 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      .card.card-body.bg-faded
-        h4 CEO (Cat Executive Officer) 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          
-        
+block content 
+  .title-bar
+    .container
+      h1 Portfolio
       
+  .portfolio
+    .container
+      .row
+        .col-md-4
+          .card
+            img.card-img-top(src="/img/smallcat.jpeg" alt="Card Image cap")
+            .card-body
+              h3.card-title Kitty Cat
+              p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              button.btn.btn-primary(type="button" data-toggle="modal" data-target="#exampleModal") Read More
+          
+              // Modal
+              .modal.fade(id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                .modal-dialog.modal-lg(role="document")
+                  .modal-content
+                    
+                    .modal-header.bg-main
+                      h5.modal-title(id="exampleModalLabel") Kitty Cat
+                      button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+
+                    .modal-body 
+                      .container-fluid
+                        .row
+                          .col-md-6
+                            img(src="/img/smallcat.jpeg")
+                          .col-md-6
+                            h3 Kitty Cat title
+                            p sint multos illum veniam nulla quem eram minim multos noster
+                        .row
+                          .col-md-2
+                            a(href="#") Files
+                          .col-md-10
+                            p nisi culpa cillum tamen aliqua nisi quis ipsum magna dolore quis summis export veniam sunt ipsum cillum culpa tempor culpa summis summis eram quis veniam irure anim tempor labore minim tamen quis ipsum fore amet fugiat enim dolore minim anim anim amet quis aute summis quae fugiat enim esse quae nisi culpa cillum tamen aliqua nisi quis ipsum magna dolore quis summis export veniam sunt ipsum cillum culpa tempor culpa summis summis eram quis veniam irure anim tempor labore minim tamen quis ipsum fore amet fugiat enim dolore minim anim anim amet quis aute summis quae fugiat enim esse quae nisi culpa cillum tamen aliqua nisi quis ipsum magna dolore quis summis export veniam sunt ipsum cillum culpa tempor culpa summis summis eram quis veniam irure anim tempor labore minim tamen quis ipsum fore amet fugiat enim dolore minim anim anim amet quis aute summis quae fugiat enim esse quae
+
+                    .modal-footer
+                      button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+
+          
+        .col-md-4
+          .card
+            img.card-img-top(src="/img/smallcat.jpeg" alt="Card Image cap")
+            .card-body
+              h3.card-title Kitty Cat
+              p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              button.btn.btn-primary(type="button" data-toggle="modal" data-target="#exampleModal") Read More
+          
+              // Modal
+              .modal.fade(id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                .modal-dialog(role="document")
+                  .modal-content
+                    .modal-header
+                      h5.modal-title(id="exampleModalLabel") Modal title
+                      button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+
+                    .modal-body 
+                      p quem aute amet elit nulla illum esse aute cillum sunt
+
+                    .modal-footer
+                      button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+                      button.btn.btn-primary(type="button") Save changes
+
+              
+        .col-md-4
+          .card
+            img.card-img-top(src="/img/smallcat.jpeg" alt="Card Image cap")
+            .card-body
+              h3.card-title Kitty Cat
+              p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              button.btn.btn-primary(type="button" data-toggle="modal" data-target="#exampleModal") Read More
+          
+              // Modal
+              .modal.fade(id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                .modal-dialog(role="document")
+                  .modal-content
+                    .modal-header
+                      h5.modal-title(id="exampleModalLabel") Modal title
+                      button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+
+                    .modal-body 
+                      p quem aute amet elit nulla illum esse aute cillum sunt
+
+                    .modal-footer
+                      button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+                      button.btn.btn-primary(type="button") Save changes
       
